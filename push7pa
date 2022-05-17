@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int z;
+	cin>>z;
+	while(z--)
+	{
+	    long long int a;
+	    cin>>a;
+	    map<long long int, long long int> b;
+	    for(int j=0; j<a; j++)
+	    {
+	        long long x;
+	        cin>>x;
+	        b[x]++;
+	    }
+	    long long ans=0;
+	    for(auto j:b)
+	    {
+	        long long t= (j.first)+(j.second-1);
+	        ans=max(ans,t);
+	    }
+	    auto j=--b.end();
+	    ans=max(ans,j->first);
+	    cout<<ans<<endl;
+	}
+	return 0;
+}
