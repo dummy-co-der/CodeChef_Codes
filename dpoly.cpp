@@ -1,21 +1,21 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 int main()
+{
+    int z;
+    cin >> z;
+    while (z--)
     {
-        int z;
-        cin>>z;
-      while(z--)
+        int a, answer;
+        cin >> a;
+        int m[a];
+        for (int i = 0; i < a; i++)
         {
-            int a, answer;
-            cin>>a;
-            int m[a];
-            for( int i=0; i<a; i++)
-            {
-                cin>>m[i];
-                if( m[i] !=0)
-                answer =i; 
-            }
-            cout<<answer<<endl;
+            cin >> m[i];
+            if (m[i] != 0)
+                answer = i;
         }
-        return 0;
+        cout << answer << endl;
     }
+    return 0;
+}

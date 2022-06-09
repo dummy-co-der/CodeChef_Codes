@@ -1,12 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
-int main() 
+int main()
 {
-    int a,b;
-    cin>>a>>b;
-    if(a!=b && a<b)
-    cout<<"YES";
+    int a, b;
+    cin >> a >> b;
+    if (a != b && a < b)
+        cout << "YES";
     else
-    cout<<"NO";
-	return 0;
+        cout << "NO";
+    return 0;
 }

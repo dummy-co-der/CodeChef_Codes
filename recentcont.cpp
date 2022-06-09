@@ -1,24 +1,24 @@
 #include <bits/stdc++.h>>
 using namespace std;
 
-int main() 
+int main()
 {
     int x;
-    cin>>x;
-    while(x--)
+    cin >> x;
+    while (x--)
     {
-        int z,a=0,b=0;
-        cin>>z;
+        int z, a = 0, b = 0;
+        cin >> z;
         string s;
-        for(int i=0; i<z; i++)
+        for (int i = 0; i < z; i++)
         {
-            cin>>s;
-            if(s=="START38")
-            a++;
+            cin >> s;
+            if (s == "START38")
+                a++;
             else
-            b++;
+                b++;
         }
-        cout<<a<<" "<<b<<endl;
+        cout << a << " " << b << endl;
     }
-	return 0;
+    return 0;
 }
